@@ -144,22 +144,20 @@
 			padding: 0px 3px 0px 3px;
 			width: 95%;
 		}
-		#cardsContainer #leastImportant {
-			background-color: #f7ec92;
-		}
-		#cardsContainer #notImportant {
-			background-color: #d1f598;
-		}
-		#cardsContainer #neutral {
-			background-color: #f9a8ed;
-		}
-		#cardsContainer #important {
-			background-color: #f4cf94;
-		}
 		#cardsContainer #veryImportant {
 			background-color: #a7d1fd;
 		}
-		#cardSort ul li:hover, #leastImportant li:hover, #notImportant li:hover, #neutral li:hover, #important li:hover, #veryImportant li:hover {
+		#cardsContainer #notImportant {
+			background-color: #f9a8ed;
+		}
+		#cardsContainer #neutral {
+			background-color: #d9a8f9;
+		}
+		#cardsContainer #important {
+			background-color: #f9adad;
+		}
+
+		#cardSort ul li:hover, #veryImportant li:hover, #notImportant li:hover, #neutral li:hover, #important li:hover, #veryImportant li:hover {
 			background-color: #a5e4f7;
 			cursor: pointer;
 		}
@@ -183,7 +181,7 @@
 			border-bottom-right-radius: 10px;
 			border-top-right-radius: 10px;
 		}
-		#leastImportant li, #notImportant li, #neutral li, #important li, #veryImportant li {
+		#veryImportant li, #notImportant li, #neutral li, #important li, #veryImportant li {
 			background-color: #FFFFFF;
 			border: 1px solid #52880B;
 			color: #000000;
@@ -237,22 +235,18 @@
 			color: #1a095e;
 			font-weight: bold;
 		}
-		#results #leastImportantResultsColumn div {
-			background-color: #f7ec92;
-		}
-		#results #notImportantResultsColumn div {
-			background-color: #d1f598;
-		}
-		#results #neutralResultsColumn div {
-			background-color: #f9a8ed;
-		}
-		#results #importantResultsColumn div {
-			background-color: #f4cf94;
-		}
 		#results #veryImportantResultsColumn div {
 			background-color: #a7d1fd;
 		}
-		
+		#results #importantResultsColumn div {
+			background-color: #f9a8ed;
+		}
+		#results #neutralResultsColumn div {
+			background-color: #d9a8f9;
+		}
+		#results #notImportantResultsColumn div {
+			background-color: #f9adad;
+		}
 		#makingSense ol li {
 			line-height: 1.75em;
 		}
@@ -261,6 +255,9 @@
 			font-style: italic;
 			font-weight: bold;
 			padding-left: 50px;
+		}
+		#something{
+			color: red;
 		}
 	</style>
 	<!-- Migrating from GitHub to jsDelivr =>jsdelivr.com/github -->
@@ -283,78 +280,69 @@
 <div class="container">
 
 	<div id="card-sort-content" class="no-results">
-		
-		
-		<hr class="thin" />
-		<div id="cardSort">
+			<div id="cardSort">
 			<div id="columnHeadings" class="row text-center">
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					&nbsp;
 				</div>
 				<div class="col-xs-2">
-					Least Important
-				</div>
-				<div class="col-xs-2">
-					Not Important
-				</div>
-				<div class="col-xs-2">
-					Neutral
+					Very Important
 				</div>
 				<div class="col-xs-2">
 					Important
 				</div>
 				<div class="col-xs-2">
-					Very Important
+					Neutral
+				</div>
+				<div class="col-xs-2">
+					Not Important
 				</div>
 			</div>
 			<div id="cardsContainer" class="row">
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<ul id="masterList" class="connectedSortable">
-						<li><span>HELPING OTHERS</span></li>
-						<li><span>ACHIEVING OUTCOMES</span></li>
-						<li><span>TAKING RISKS</span></li>
-						<li><span>SOLVING PROBLEMS</span></li>
-						<li><span>TEAM WORK</span></li>
-						<li><span class="smaller-text">TAKING RESPONSIBILITY</span></li>
-						<li><span>WORK AUTONOMY</span></li>
-						<li><span>FINANCIAL REWARD</span></li>
-						<li><span class="smaller-text">COMMUNICATING WITH OTHERS </span></li>
-						<li><span class="smaller-text">CAREER PROGRESSION</span></li>
-						<li><span>LOGICAL THINKING</span></li>
-						<li><span>BEING VALUED</span></li>
-						<li><span>BEING INNOVATIVE</span></li>
-						<li><span>DETAILED WORK</span></li>
-						<li><span>WORKING WITH DATA</span></li>
-						<li><span>FLEXIBILITY</span></li>
-						<li><span>LEADING OTHERS</span></li>
-						<li><span>EFFICIENCY</span></li>
-						<li><span class="smaller-text">CHALLENGING WORK</span></li>
-						<li><span>LEARNING</span></li>
-						<li><span>INTEGRITY</span></li>
-						<li><span class="smaller-text">PREDICTABILITY</span></li>
-						<li><span>CHANGE AND VARIETY</span></li>
-						<li><span>ANALYTICAL THINKING</span></li>
+						<li><span>SELF ACCEPTANCE<br><font color="#00C1D4">Self Respect, Self esteem.</font></span></li>
+						<li><span>ADVENTURE<br><font color="#00C1D4">Challenge, risk-taking, testing limts.</font></span></li>
+						<li><span>CREATIVITY<br><font color="#00C1D4">Finding new ways to do things. innovative.</font></span></li>
+						<li><span>PLAYFUL<br><font color="#00C1D4">Begin humorous, fun-loving, light-heated.</font></span></li>
+						<li><span class="smaller-text">ORDERLY<br><font color="#00C1D4">Begin neat and organized.</font></span></li>
+						<li><span>HELPING OTHERS<br><font color="#00C1D4">Taking care of others and doing what they want.</font></span></li>
+						<li><span>FRIENDLY<br><font color="#00C1D4">Warm, open, caring, and agreeable toward others.</font></span></li>
+						<li><span>ACCEPTING<br><font color="#00C1D4">Open to, allowing of, or at peace wih myself, others, life, my feelings, etc.</font></span></li>
+						<li><span class="smaller-text">PROTECTIVE<br><font color="#00C1D4">Looking after the safety and security of myself or others.</font></span></li>
+						<li><span class="smaller-text">GRATEFUL<br><font color="#00C1D4">Begin apperciative for what i have received.</font></span></li>
+						<li><span>INTEGRITY<br><font color="#00C1D4">To live my daily life in a way that is consistent with my values.</font></span></li>
+						<li><span>LOVING<br><font color="#00C1D4">Showing love, effection, or great care- to myself or others.</font></span></li>
+						<li><span>RESPONSIBLE<br><font color="#00C1D4">Begin trustworthy, reliable, and accountable for my actions.</font></span></li>
+						<li><span>CARING/SELF-CARING<br><font color="#00C1D4">Actively taking care of myself, others, the environment, etc.</font></span></li>
+						<li><span>MINDFUL/PRESENT<br><font color="#00C1D4">Fully present and engaging in whatever I'm doing.</font></span></li>
+						<li><span>SUPPORTIVE<br><font color="#00C1D4">Begin helpful, encouraging, and available -to myself or others.</font></span></li>
+						<li><span>FELXIBLE<br><font color="#00C1D4">Willing and able to adjust and adapt to changing circumstances.</font></span></li>
+						<li><span>FAMILY<br><font color="#00C1D4">Taking care of/and spending timw with loved ones.</font></span></li>
+						<li><span>FRIENDSHIP<br><font color="#00C1D4">Close companionship, on-going relationships.</font></span></li>
+						<li><span class="smaller-text">FREEDOM<br><font color="#00C1D4">To be free from undue restrictions and limitations.</font></span></li>
+						<li><span>IMAGINATION<br><font color="#00C1D4">To have dreams and see possibilities.</font></span></li>
+						<li><span class="smaller-text">NOVELTY<br><font color="#00C1D4">To have a life full of change and variety</font></span></li>
+						<li><span>PURPOSE<br><font color="#00C1D4">To have meaning and direction in my life.</font></span></li>
+						<li><span>WEALTH<br><font color="#00C1D4">To have plenty of money</font></span></li>
 					</ul>
 				</div>
 				<div class="col-xs-2">
-					<ul id="leastImportant" class="connectedSortable"></ul>
-				</div>
-				<div class="col-xs-2">
-					<ul id="notImportant" class="connectedSortable"></ul>
-				</div>
-				<div class="col-xs-2">
-					<ul id="neutral" class="connectedSortable"></ul>
+					<ul id="veryImportant" class="connectedSortable"></ul>
 				</div>
 				<div class="col-xs-2">
 					<ul id="important" class="connectedSortable"></ul>
 				</div>
 				<div class="col-xs-2">
-					<ul id="veryImportant" class="connectedSortable"></ul>			
+					<ul id="neutral" class="connectedSortable"></ul>
+				</div>
+				<div class="col-xs-2">
+					<ul id="notImportant" class="connectedSortable"></ul>
 				</div>
 			</div>
 			<div id="submit" class="row text-center buffer-bottom">
 				<div class="col-xs-12">
-					<input id="submitButton" type="submit" value="Next" />
+					<input id="submitButton" type="submit" value="See results" />
 				</div>
 			</div>
 		</div>
@@ -366,19 +354,18 @@
 		<hr class="thin" />
 		
 		<div id="resultsColumnHeadings" class="row text-center">
-			<div class="col-xs-2"><p>Least Important</p></div>
-			<div class="col-xs-2"><p>Not Important</p></div>
-			<div class="col-xs-2"><p>Neutral</p></div>
-			<div class="col-xs-2"><p>Important</p></div>
 			<div class="col-xs-2"><p>Very Important</p></div>
+			<div class="col-xs-2"><p>Important</p></div>
+			<div class="col-xs-2"><p>Neutral</p></div>
+			<div class="col-xs-2"><p>Not Important</p></div>
 		</div>
 		<div class="row text-center">
-			<div id="leastImportantResultsColumn" class="col-xs-2">
+			<div id="veryImportantResultsColumn" class="col-xs-2">
 				<div class="resultsColumn">
-					<ul id="leastImportantResults" class="list-no-style list-no-padding-left"></ul>
+					<ul id="veryImportantResults" class="list-no-style list-no-padding-left"></ul>
 				</div>
 			</div>
-			<div id="notImportantResultsColumn" class="col-xs-2">
+			<div id="importantResultsColumn" class="col-xs-2">
 				<div class="resultsColumn">
 					<ul id="notImportantResults" class="list-no-style list-no-padding-left"></ul>
 				</div>
@@ -388,20 +375,15 @@
 					<ul id="neutralResults" class="list-no-style list-no-padding-left"></ul>
 				</div>
 			</div>
-			<div id="importantResultsColumn" class="col-xs-2">
+			<div id="notImportantResultsColumn" class="col-xs-2">
 				<div class="resultsColumn">
 					<ul id="importantResults" class="list-no-style list-no-padding-left"></ul>
-				</div>
-			</div>
-			<div id="veryImportantResultsColumn" class="col-xs-2">
-				<div class="resultsColumn">
-					<ul id="veryImportantResults" class="list-no-style list-no-padding-left"></ul>
 				</div>
 			</div>
 		</div>
 		
 		<div class="row text-center noprint">
-			<div id="print" class="col-xs-10">
+			<div id="print" class="col-xs-8">
 				<div>
 					<input id="backButton" type="submit" value="Back" />
 					<input id="printButton" type="submit" value="Print" />
@@ -415,7 +397,7 @@
 			jQuery("#results").hide();
 			jQuery("#makingSense").hide();
 
-			jQuery("#masterList, #leastImportant, #notImportant, #neutral, #important, #veryImportant").sortable({
+			jQuery("#masterList, #veryImportant, #notImportant, #neutral, #important, #veryImportant").sortable({
 				connectWith: ".connectedSortable"
 			}).disableSelection();
 		});
