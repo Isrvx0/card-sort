@@ -1,0 +1,41 @@
+<div id="instructions">
+			
+			<div id="instructionsHeading">
+				<h2>Instructions</h2>
+			</div>
+
+			<div id="instructionsContent">
+				<p>Allow <strong>15-20 minutes</strong> to complete the card sort.</p>
+				<p class="font-large"><strong>Step 1 – Sort each value</strong></p>
+				<p>
+					Drag and drop each one of the <strong>24 career values</strong> from the 
+					left hand list to one of the five columns, according to <strong>how 
+					important</strong> each value is for you.
+				</p>
+				<p>
+					There is <strong>no limit</strong> on how many cards you can place in any 
+					one column. However we recommend that you try to place <strong>some values 
+					in each column</strong> – this will help you to decide what really is most 
+					and least important to you.
+				</p>
+				<p>
+					We understand that it can sometimes be difficult to decide exactly where to 
+					place each card and suggest you place it in the <strong>'best fit'</strong> 
+					column. You can change their order and column <strong>as many times</strong> 
+					as you like.
+				</p>
+				<p class="font-large"><strong>Step 2 – Review and prioritise your values</strong></p>
+				<p>
+					Once you have completed the sort, check to see that you have placed each value 
+					in <strong>priority order</strong> from top to bottom in each column.
+				</p>
+				<p class="font-large"><strong>Step 3 – Click next to view and print results</strong></p>
+				<p>
+					Once you click next you will see your results displayed. Click on the BACK button 
+					if they don't seem right and you want to change them around. You will also see a 
+					series of questions designed to help you <strong>make further sense</strong> of 
+					your career values.
+				</p>
+			</div>
+		</div>
+		
