@@ -6,7 +6,7 @@
 	<link href="https://tinyurl.com/23fwsduy" rel="stylesheet" />
 	<style type="text/css">
 		.container {
-			background-color: #FFFFFF;
+			background-color: #12315c;
 		}
 		.row {
 			margin-left: -10px;
@@ -47,18 +47,14 @@
 		a {
 			text-decoration: underline;
 		}
-		body {
-			background-color: #E0E2ED;
-			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: medium;
-		}
 		h1 {
-			color: #979ED3;
+			color: white;
 			font-size: 2em;
 			font-weight: bold;
+			text-align: center;
 		}
 		h2 {
-			color: #979ED3;
+			color: white;
 			font-size: 1.5em;
 			font-weight: bold;
 		}
@@ -103,7 +99,7 @@
 			width: 12px;
 		}
 		::-webkit-scrollbar-track {
-			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+			-webkit-box-shadow: inset 0 0 6px rgb(7, 26, 139); 
 			background-color: #FFFFFF;
 			border-radius: 10px;
 		}
@@ -112,10 +108,9 @@
 			border-radius: 10px;
 			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 		}
-		
 
 		#cardsContainer {
-			background-color: #FFFFFF;
+			background-color: #001b48;
 			border-radius: 10px;
 			margin-bottom: 10px;
 			padding-bottom: 10px;
@@ -133,32 +128,41 @@
 			padding: 5px 0px 5px 5px;
 		}
 		#cardSort ul li {
-			background-color: #FFFFFF;
+			background-color: #02457a;
 			border: 1px solid #535254;
 			border-radius: 10px;
-			color: #1a095e;
+			color: #ffffff;
 			display: table;
 			font-weight: bold;
 			height: 75px;
 			margin-bottom: 5px;
 			padding: 0px 3px 0px 3px;
 			width: 95%;
+			box-shadow: 0 0 5px #c9d8fa, 0 0 25px #c9d8fa;
+		}
+		#cardSort ul li:hover {
+			box-shadow: 0 0 5px #c9d8fa, 0 0 25px #c9d8fa,
+			0 0 20px #c9d8fa, 0 0 100px #c9d8fa, 0 0 200px #c9d8fa;
 		}
 		#cardsContainer #veryImportant {
 			background-color: #a7d1fd;
+			box-shadow: 0 0 5px #c9d8fa, 0 0 10px #c9d8fa;
 		}
 		#cardsContainer #important {
 			background-color: #f9a8ed;
+			box-shadow: 0 0 5px #fec9f6, 0 0 10px #fec9f6;
 		}
 		#cardsContainer #neutral {
 			background-color: #d9a8f9;
+			box-shadow: 0 0 5px #ebd4f9, 0 0 10px #ebd4f9;
 		}
 		#cardsContainer #notImportant {
 			background-color: #f9adad;
+			box-shadow: 0 0 5px #fed0d0, 0 0 10px #fed0d0;
 		}
 
 		#cardSort ul li:hover, #veryImportant li:hover, #notImportant li:hover, #neutral li:hover, #important li:hover, #veryImportant li:hover {
-			background-color: #a5e4f7;
+			background-color: #1a3775;
 			cursor: pointer;
 		}
 		#cardSort ul li span {
@@ -167,7 +171,7 @@
 			vertical-align: middle;
 		}
 		#columnHeadings div {
-			background-color: #adb9f1;
+			background-color: #2046a1;
 			color: #FFFFFF;
 			font-weight: bold;
 			margin-bottom: 15px;
@@ -187,12 +191,12 @@
 			color: #000000;
 		}
 		#masterList {
-			background-color: #f3f3eb;	
+			background-color: #143074;	
 			height: 450px;
 			overflow-y: scroll;
 		}
 		#submit, #print {
-			background-color: #979ED3;
+			background-color: #2046a1;
 			border-radius: 10px;
 			color: #000000;
 			font-weight: bold;
@@ -205,7 +209,7 @@
 		
 		
 		#resultsColumnHeadings div {
-			background-color: #979ED3;
+			background-color: #2046a1;
 			color: #FFFFFF;
 			font-weight: bold;
 			margin-bottom: 15px;
@@ -236,17 +240,22 @@
 			font-weight: bold;
 		}
 		#results #veryImportantResultsColumn div {
-			background-color: #a7d1fd;
-		}
+			background-color: #57a6f9;
+			box-shadow: 0 0 5px #c9d8fa, 0 0 10px #c9d8fa;		}
 		#results #importantResultsColumn div {
-			background-color: #f9a8ed;
+			background-color: #ff83ec;
+			box-shadow: 0 0 5px #fec9f6, 0 0 10px #fec9f6;
 		}
 		#results #neutralResultsColumn div {
-			background-color: #d9a8f9;
+			background-color: #c778fb;
+			box-shadow: 0 0 5px #ebd4f9, 0 0 10px #ebd4f9;
 		}
 		#results #notImportantResultsColumn div {
-			background-color: #f9adad;
+			background-color: #f97c7c;
+			box-shadow: 0 0 5px #fed0d0, 0 0 10px #fed0d0;
 		}
+		
+
 		#makingSense ol li {
 			line-height: 1.75em;
 		}
@@ -301,30 +310,30 @@
 			<div id="cardsContainer" class="row">
 				<div class="col-xs-4">
 					<ul id="masterList" class="connectedSortable">
-						<li><span>SELF ACCEPTANCE<br><font color="#00C1D4">Self Respect, Self esteem.</font></span></li>
-						<li><span>ADVENTURE<br><font color="#00C1D4">Challenge, risk-taking, testing limts.</font></span></li>
-						<li><span>CREATIVITY<br><font color="#00C1D4">Finding new ways to do things. innovative.</font></span></li>
-						<li><span>PLAYFUL<br><font color="#00C1D4">Begin humorous, fun-loving, light-heated.</font></span></li>
-						<li><span class="smaller-text">ORDERLY<br><font color="#00C1D4">Begin neat and organized.</font></span></li>
-						<li><span>HELPING OTHERS<br><font color="#00C1D4">Taking care of others and doing what they want.</font></span></li>
-						<li><span>FRIENDLY<br><font color="#00C1D4">Warm, open, caring, and agreeable toward others.</font></span></li>
-						<li><span>ACCEPTING<br><font color="#00C1D4">Open to, allowing of, or at peace wih myself, others, life, my feelings, etc.</font></span></li>
-						<li><span class="smaller-text">PROTECTIVE<br><font color="#00C1D4">Looking after the safety and security of myself or others.</font></span></li>
-						<li><span class="smaller-text">GRATEFUL<br><font color="#00C1D4">Begin apperciative for what i have received.</font></span></li>
-						<li><span>INTEGRITY<br><font color="#00C1D4">To live my daily life in a way that is consistent with my values.</font></span></li>
-						<li><span>LOVING<br><font color="#00C1D4">Showing love, effection, or great care- to myself or others.</font></span></li>
-						<li><span>RESPONSIBLE<br><font color="#00C1D4">Begin trustworthy, reliable, and accountable for my actions.</font></span></li>
-						<li><span>CARING/SELF-CARING<br><font color="#00C1D4">Actively taking care of myself, others, the environment, etc.</font></span></li>
-						<li><span>MINDFUL/PRESENT<br><font color="#00C1D4">Fully present and engaging in whatever I'm doing.</font></span></li>
-						<li><span>SUPPORTIVE<br><font color="#00C1D4">Begin helpful, encouraging, and available -to myself or others.</font></span></li>
-						<li><span>FELXIBLE<br><font color="#00C1D4">Willing and able to adjust and adapt to changing circumstances.</font></span></li>
-						<li><span>FAMILY<br><font color="#00C1D4">Taking care of/and spending timw with loved ones.</font></span></li>
-						<li><span>FRIENDSHIP<br><font color="#00C1D4">Close companionship, on-going relationships.</font></span></li>
-						<li><span class="smaller-text">FREEDOM<br><font color="#00C1D4">To be free from undue restrictions and limitations.</font></span></li>
-						<li><span>IMAGINATION<br><font color="#00C1D4">To have dreams and see possibilities.</font></span></li>
-						<li><span class="smaller-text">NOVELTY<br><font color="#00C1D4">To have a life full of change and variety</font></span></li>
-						<li><span>PURPOSE<br><font color="#00C1D4">To have meaning and direction in my life.</font></span></li>
-						<li><span>WEALTH<br><font color="#00C1D4">To have plenty of money</font></span></li>
+						<li><span>SELF ACCEPTANCE<br><font color="cyan">Self Respect, Self esteem.</font></span></li>
+						<li><span>ADVENTURE<br><font color="cyan">Challenge, risk-taking, testing limts.</font></span></li>
+						<li><span>CREATIVITY<br><font color="cyan">Finding new ways to do things. innovative.</font></span></li>
+						<li><span>PLAYFUL<br><font color="cyan">Begin humorous, fun-loving, light-heated.</font></span></li>
+						<li><span class="smaller-text">ORDERLY<br><font color="cyan">Begin neat and organized.</font></span></li>
+						<li><span>HELPING OTHERS<br><font color="cyan">Taking care of others and doing what they want.</font></span></li>
+						<li><span>FRIENDLY<br><font color="cyan">Warm, open, caring, and agreeable toward others.</font></span></li>
+						<li><span>ACCEPTING<br><font color="cyan">Open to, allowing of, or at peace wih myself, others, life, my feelings, etc.</font></span></li>
+						<li><span class="smaller-text">PROTECTIVE<br><font color="cyan">Looking after the safety and security of myself or others.</font></span></li>
+						<li><span class="smaller-text">GRATEFUL<br><font color="cyan">Begin apperciative for what i have received.</font></span></li>
+						<li><span>INTEGRITY<br><font color="cyan">To live my daily life in a way that is consistent with my values.</font></span></li>
+						<li><span>LOVING<br><font color="cyan">Showing love, effection, or great care- to myself or others.</font></span></li>
+						<li><span>RESPONSIBLE<br><font color="cyan">Begin trustworthy, reliable, and accountable for my actions.</font></span></li>
+						<li><span>CARING/SELF-CARING<br><font color="cyan">Actively taking care of myself, others, the environment, etc.</font></span></li>
+						<li><span>MINDFUL/PRESENT<br><font color="cyan">Fully present and engaging in whatever I'm doing.</font></span></li>
+						<li><span>SUPPORTIVE<br><font color="cyan">Begin helpful, encouraging, and available -to myself or others.</font></span></li>
+						<li><span>FELXIBLE<br><font color="cyan">Willing and able to adjust and adapt to changing circumstances.</font></span></li>
+						<li><span>FAMILY<br><font color="cyan">Taking care of/and spending timw with loved ones.</font></span></li>
+						<li><span>FRIENDSHIP<br><font color="cyan">Close companionship, on-going relationships.</font></span></li>
+						<li><span class="smaller-text">FREEDOM<br><font color="cyan">To be free from undue restrictions and limitations.</font></span></li>
+						<li><span>IMAGINATION<br><font color="cyan">To have dreams and see possibilities.</font></span></li>
+						<li><span class="smaller-text">NOVELTY<br><font color="cyan">To have a life full of change and variety</font></span></li>
+						<li><span>PURPOSE<br><font color="cyan">To have meaning and direction in my life.</font></span></li>
+						<li><span>WEALTH<br><font color="cyan">To have plenty of money</font></span></li>
 					</ul>
 				</div>
 				<div class="col-xs-2">
